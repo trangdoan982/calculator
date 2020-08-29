@@ -1,0 +1,81 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+}
+
+.canvas {
+    border: 1px solid cadetblue;
+    border-radius: 0 0 10px 10px;
+    background-color: cadetblue;
+    width: 300px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   
+}
+.screen {
+    width: 302px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    text-align: end;    
+}
+.previous-operand, .current-operand {
+    padding: 0 20px 10px 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.previous-operand {
+    font-size: 18px;
+    opacity: 0.7;
+}
+.current-operand {
+    font-size: 25px;
+}
+button {
+    margin: 7px;
+    height: 60px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px grey ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+
+}
+
+.operator, .equal {
+    background-color: rgb(240, 171, 82);
+}
+
+button:active {
+    box-shadow: 2px 2px 4px grey;
+}
+
+button:focus {
+    outline: 0;
+}
+.AC {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.C {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
